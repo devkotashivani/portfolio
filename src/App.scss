@@ -1,0 +1,210 @@
+:root {
+  scroll-behavior: smooth;
+}
+:root {
+  --text-color: #1e1e1e;
+  --color-dark: #1e1e1e;
+  --body-bg: #fff;
+
+  // alt color for dark theme
+  --dark-bg: #1e1e1e;
+  --dark-text-color: white;
+}
+
+// Default Global Style
+$font-stack: "American Typewriter, serif";
+$p-fontsize: 20px;
+$global-color: conic-gradient(
+  from 180deg at 50% 50%,
+  #0aefff -69.37deg,
+  #0f83ff 31.88deg,
+  #b056e7 120deg,
+  #ff9966 204.37deg,
+  #0aefff 290.63deg,
+  #0f83ff 391.87deg
+);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+  h1,
+  h2 {
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold !important;
+    padding-bottom: 3rem;
+  }
+}
+#darkMode {
+  display: none;
+}
+.wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+  color: var(--text-color);
+
+  .dark-mode-toggle {
+    top: 6rem;
+    left: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.5);
+      transition: all 0.5s;
+    }
+  }
+}
+
+//apply drak mode
+.dark-mode-check:checked + .wrapper {
+  --body-bg: var(--dark-bg);
+  --text-color: var(--dark-text-color);
+}
+
+// Header
+.darkNav {
+  h4 {
+    color: white;
+  }
+  a {
+    color: white;
+  }
+}
+.headerNav {
+  h4 {
+    font-weight: bold;
+  }
+  a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+// Hero
+.hero {
+  .heroContainer {
+    padding-top: 4rem;
+    position: relative;
+    height: 100vh;
+  }
+  .col {
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+  }
+  .left {
+    font-size: $p-fontsize;
+
+    .tag {
+      padding-bottom: 2rem;
+    }
+    .btn {
+      background: linear-gradient(45deg, #0f83ffd5, #af56e7bb);
+      border: none;
+      height: 50px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        #0aefffdf -69.37deg,
+        #0f83ffd7 31.88deg,
+        #af56e7e2 120deg,
+        #ff9966e8 204.37deg,
+        #0aefffe4 290.63deg,
+        #0f83ffcb 391.87deg
+      );
+      background-size: 200% 200%;
+      -webkit-animation: Animation 5s ease infinite;
+      -moz-animation: Animation 5s ease infinite;
+      animation: Animation 5s ease infinite;
+    }
+
+    @-webkit-keyframes Animation {
+      0% {
+        background-position: 10% 0%;
+      }
+      50% {
+        background-position: 91% 100%;
+      }
+      100% {
+        background-position: 10% 0%;
+      }
+    }
+    @-moz-keyframes Animation {
+      0% {
+        background-position: 10% 0%;
+      }
+      50% {
+        background-position: 91% 100%;
+      }
+      100% {
+        background-position: 10% 0%;
+      }
+    }
+    @keyframes Animation {
+      0% {
+        background-position: 10% 0%;
+      }
+      50% {
+        background-position: 91% 100%;
+      }
+      100% {
+        background-position: 10% 0%;
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    height: 100%;
+
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      filter: blur(160px);
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        #0aefff -69.37deg,
+        #0f83ff 31.88deg,
+        #b056e7 120deg,
+        #ff9966 204.37deg,
+        #0aefff 290.63deg,
+        #0f83ff 391.87deg
+      );
+      /* Adjust the gradient colors and opacity as needed */
+    }
+    .image {
+      padding-top: 2rem;
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      background-color: #ffffff96;
+    }
+    .hero-img-overlay {
+      position: absolute;
+      left: -150%;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 370%;
+      height: 40%;
+      background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #ffffffb1);
+    }
+  }
+}
+
+// Skills
+.icons {
+  svg {
+    width: 50px;
+    height: 50px;
+    fill: #af56e79e;
+  }
+}

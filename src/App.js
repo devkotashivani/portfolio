@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router";
+import "./App.scss";
+import Hero from "./component/Hero";
+import Skills from "./component/Skills";
+import Project from "./component/Project";
+import About from "./component/About";
+import Contact from "./component/Contact";
+import { BsCircleHalf } from "@react-icons/all-files/bs/BsCircleHalf";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <input id="darkMode" type="checkbox" className="dark-mode-check" />
+      <div className="wrapper">
+      <Hero />
+      <Skills />
+      <Project />
+      
+    
+        {/* <!-- dark mode toggler --> */}
+        
+      </div>
     </div>
   );
 }
