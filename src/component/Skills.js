@@ -19,14 +19,14 @@ function Skills() {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
   };
   return (
     <div>
       <div id="skills" className="skills mb-5">
         <Container>
           <h2 className="text-center">My Skills</h2>
-          <Slider {...settings} className="icons pt-3">
+          <Slider {...settings} className="icons pt-3 pb-4">
             <div>
               <h1><AiFillHtml5 /></h1>
             </div>

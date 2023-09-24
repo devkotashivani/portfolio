@@ -15,6 +15,7 @@ function App() {
       <Hero />
       <Skills />
       <Project />
+      <About />
       
     
         {/* <!-- dark mode toggler --> */}

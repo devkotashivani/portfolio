@@ -28,7 +28,7 @@ function Hero() {
                   </div>
                   
                   <Link className=" text-decoration-none link ">
-                    <Button className="btn">Download Resume</Button>
+                    <Button className="globalBtn">Download Resume</Button>
                   </Link>
                
                 </div>
@@ -40,7 +40,7 @@ function Hero() {
               <div className="right shadow">
               <div class="gradient-overlay"></div>
               <img className="image" src={user1Img} alt="" />  
-              <div  class="hero-img-overlay"></div>
+              {/* <div  class="hero-img-overlay"></div> */}
               </div>
               
             </Col>
