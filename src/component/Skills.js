@@ -22,8 +22,8 @@ function Skills() {
     cssEase: "linear",
   };
   return (
-    <div>
-      <div id="skills" className="skills mb-5">
+    <div id="skills">
+      <div  className="skills mb-5">
         <Container>
           <h2 className="text-center">My Skills</h2>
           <Slider {...settings} className="icons pt-3 pb-4">

@@ -3,7 +3,8 @@ import Layout from "./Layout";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
-import user1Img from "../assets/img/user1.png";
+import user1Img from "../assets/img/me.jpg";
+import { motion } from "framer-motion"
 
 function Hero() {
   
@@ -20,7 +21,7 @@ function Hero() {
                 <div className="tag">
                   <Typewriter
                     options={{
-                      strings: ["Web Developer", "UI-UX Designer"],
+                      strings: ["Web Developer", "UI-UX Designer", "Customer Focused"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -28,7 +29,7 @@ function Hero() {
                   </div>
                   
                   <Link className=" text-decoration-none link ">
-                    <Button className="globalBtn">Download Resume</Button>
+                    <Button className="globalBtn">Made with ReactJS</Button>
                   </Link>
                
                 </div>

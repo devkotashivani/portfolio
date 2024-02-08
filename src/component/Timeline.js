@@ -1,46 +1,50 @@
 import React from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import {MdWork} from '@react-icons/all-files/md/MdWork'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { MdWork } from "@react-icons/all-files/md/MdWork";
 
 function Timeline() {
   let timelineElements = [
     {
       id: 1,
-      title: "Frontend Developer",
-      location: "Dragontail, Ascana",
+      title: "Internship",
+      location: "Dented Code Academy",
       description:
-        "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-      buttonText: "View Frontend Projects",
-      date: "August 2016 - present",
+        "Successfully translating concepts into visually appealing designs, showcasing my commitment to delivering high-quality work.",
+      buttonText: "Figma, ReactJS, Redux, Firebase",
+      date: "Aug 2023 - present",
       icon: "work",
     },
     {
       id: 2,
-      title: "Backend Developer",
-      location: "Skystead, Craonia",
+      title: "Manager",
+      location: "Stellas By the Lake",
       description:
-        "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-      buttonText: "View Backend Projects",
-      date: "June 2013 - August 2016",
+        "Developing and implementing strategic plans to enhance the cafe's overall performance, resulting in increased customer satisfaction and revenue growth. ",
+      buttonText: "Customer Service, Website & Social Media Handling",
+      date: "Apr 2020 - Present",
       icon: "work",
     },
     {
       id: 3,
-      title: "Quality Assurance Engineer",
-      location: "South Warren, Geshington",
+      title: "Freelancer",
+      location: "Canberra",
       description:
-        "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-      buttonText: "Company Website",
-      date: "September 2011 - June 2013",
+        "Working on cutting-edge client assignments across various platforms, showcasing a client-focused mindset. ",
+      buttonText: "Wordpress, Adobe, cPanel, AWS",
+      date: " ",
       icon: "work",
-    }
+    },
   ];
 
-  let workIconStyles = { background: "linear-gradient(45deg, #0f83ffd5, #af56e7bb)" };
+  let workIconStyles = {
+    background: "linear-gradient(45deg, #0f83ffd5, #af56e7bb)",
+  };
 
   return (
     <div className="timeline">
-      
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -50,7 +54,6 @@ function Timeline() {
             element.buttonText !== "";
 
           return (
-            
             <VerticalTimelineElement
               key={element.key}
               date={element.date}

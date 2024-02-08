@@ -7,31 +7,20 @@ function EduTimeline() {
     let timelineElements = [
         {
           id: 1,
-          title: "Oak Ridge College",
-          location: "South Warren, Geshington",
-          description:
-            "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-          buttonText: "Course Certificate",
-          date: "September 2011",
+          title: "Dented Code Academy",
+          location: "Canberra",
+          description: "Job Ready Course",
+          buttonText: "IT Course",
+          date: "Aug 2023 - Present",
           icon: "school",
         },
         {
           id: 2,
-          title: "Hawking College",
+          title: "Swinburne University of Technology",
           location: "Skystead, Craonia",
-          description:
-            "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+          description: "Masters in IT",
           buttonText: "College Projects",
-          date: "2007 - 2011",
-          icon: "school",
-        },
-        {
-          id: 3,
-          title: "Marble Hills Grammar School",
-          location: "Dragontail, Ascana",
-          description:
-            "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-          date: "2003 - 2007",
+          date: "2018-2020",
           icon: "school",
         },
       ];

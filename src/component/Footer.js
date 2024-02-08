@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
-    <div>
-      
+    <div className="footer bg-dark text-light text-center">
+      &copy; All Rights Reserved 2023 || Made by Me with ❤️
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
