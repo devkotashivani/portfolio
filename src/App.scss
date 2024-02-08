@@ -99,7 +99,11 @@ $secondary-color: linear-gradient(45deg, #0f83ffd5, #af56e7bb);
   a {
     color: white !important;
   }
+  .navbar-toggler {
+    background-color: white !important;
+  }
 }
+
 .headerNav {
   h4 {
     font-weight: bold;
@@ -124,8 +128,8 @@ $secondary-color: linear-gradient(45deg, #0f83ffd5, #af56e7bb);
 }
 
 // Hero
-.leftContent{
-  .globalBtn{
+.leftContent {
+  .globalBtn {
     margin-bottom: 15px;
   }
 }
@@ -369,6 +373,11 @@ $secondary-color: linear-gradient(45deg, #0f83ffd5, #af56e7bb);
   }
   .timeline .button {
     padding: 2px 0.5rem !important;
+  }
+  .hero .col {
+    display: flex !important;
+    justify-content: center !important;
+    margin: auto !important;
   }
 }
 
