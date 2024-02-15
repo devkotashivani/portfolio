@@ -17,7 +17,7 @@ function EduTimeline() {
         {
           id: 2,
           title: "Swinburne University of Technology",
-          location: "Skystead, Craonia",
+          location: "Hawthorn, Melbourne",
           description: "Masters in IT",
           buttonText: "College Projects",
           date: "2018-2020",
